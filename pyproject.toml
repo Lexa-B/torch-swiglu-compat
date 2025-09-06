@@ -1,0 +1,35 @@
+[project]
+name = "torch-swiglu-compat"
+version = "0.0.0"
+description = "A small compatability patch to add in fmo-mt's style of SwiGLU into PyTorch's nn while we're waiting for the actual PR to be merged. Most of the functional code is based on fmo-mt' work, so I don't make any claim to copyright over any of it. This is just a temporary solution and I'll take it down once the full SwiGLU support is added to Torch."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.1",
+]
+
+keywords = ["pytorch", "swiglu", "activation", "compat", "shim"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project.urls]
+Homepage = "https://github.com/Lexa-B/torch-swiglu-compat"
+Repository = "https://github.com/Lexa-B/torch-swiglu-compat"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/torch_swiglu_compat"]
