@@ -11,7 +11,7 @@ use the **final API** today and remove this later with zero code changes.
 ## Install (with `uv`)
 
 ```bash
-uv pip install git+https://github.com/Lexa-B/torch-swiglu-compat.git
+uv add git+https://github.com/Lexa-B/torch-swiglu-compat.git
 
 ```
 
